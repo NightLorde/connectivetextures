@@ -318,6 +318,31 @@
     },
     "damage_reduction": { "all": 28 }
   },
+{
+    "abstract": "cargo_space_abstract",
+    "type": "vehicle_part",
+    "name": { "str": "cargo space" },
+    "symbol": "=",
+    "looks_like": "box",
+    "color": "light_gray",
+    "broken_symbol": "#",
+    "broken_color": "dark_gray",
+    "size": "500 L",
+    "item": "cargo_rack",
+    "location": "center",
+    "flags": [ "BOARDABLE", "CARGO", "COVERED" ],
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 2 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "30 m", "using": [ [ "vehicle_weld_removal", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 2 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ], [ "steel_tiny", 1 ] ] }
+    "breaks_into": [
+      { "item": "steel_lump", "count": [ 6, 8 ] },
+      { "item": "steel_chunk", "count": [ 6, 8 ] },
+      { "item": "scrap", "count": [ 6, 8 ] }
+    ]
+  },
+
+
   {
     "copy-from": "trunk_abstract",
     "type": "vehicle_part",
@@ -411,6 +436,102 @@
     "extend": { "flags": [ "SHOCK_RESISTANT" ] }
   },
   {
+    "copy-from": "cargo_space_abstract",
+    "id": "cargo_space",
+    "type": "vehicle_part",
+    "name": { "str": "cargo space" },
+  },
+ {
+    "copy-from": "cargo_space_abstract",
+    "id": "cargo_space_top_left",
+    "type": "vehicle_part",
+    "name": { "str": "cargo space" },
+  },
+ {
+    "copy-from": "cargo_space_abstract",
+    "id": "cargo_space_top_middle",
+    "type": "vehicle_part",
+    "name": { "str": "cargo space" },
+  },
+ {
+    "copy-from": "cargo_space_abstract",
+    "id": "cargo_space_top_right",
+    "type": "vehicle_part",
+    "name": { "str": "cargo space" },
+  },
+ {
+    "copy-from": "cargo_space_abstract",
+    "id": "cargo_space_middle_left",
+    "type": "vehicle_part",
+    "name": { "str": "cargo space" },
+  },
+ {
+    "copy-from": "cargo_space_abstract",
+    "id": "cargo_space_middle_right",
+    "type": "vehicle_part",
+    "name": { "str": "cargo space" },
+  },
+ {
+    "copy-from": "cargo_space_abstract",
+    "id": "cargo_space_center",
+    "type": "vehicle_part",
+    "name": { "str": "cargo space" },
+  },
+ {
+    "copy-from": "cargo_space_abstract",
+    "id": "cargo_space_bottom_right",
+    "type": "vehicle_part",
+    "name": { "str": "cargo space" },
+  },
+ {
+    "copy-from": "cargo_space_abstract",
+    "id": "cargo_space_bottom_middle",
+    "type": "vehicle_part",
+    "name": { "str": "cargo space" },
+  },
+ {
+    "copy-from": "cargo_space_abstract",
+    "id": "cargo_space_bottom_left",
+    "type": "vehicle_part",
+    "name": { "str": "cargo space" },
+  },
+ {
+    "copy-from": "cargo_space_abstract",
+    "id": "cargo_space_two_wall_vertical",
+    "type": "vehicle_part",
+    "name": { "str": "cargo space" },
+  },
+ {
+    "copy-from": "cargo_space_abstract",
+    "id": "cargo_space_two_wall_horizontal",
+    "type": "vehicle_part",
+    "name": { "str": "cargo space" },
+  },
+ {
+    "copy-from": "cargo_space_abstract",
+    "id": "cargo_space_two_wall_top",
+    "type": "vehicle_part",
+    "name": { "str": "cargo space" },
+  },
+ {
+    "copy-from": "cargo_space_abstract",
+    "id": "cargo_space_two_wall_bottom",
+    "type": "vehicle_part",
+    "name": { "str": "cargo space" },
+  },
+ {
+    "copy-from": "cargo_space_abstract",
+    "id": "cargo_space_two_wall_left",
+    "type": "vehicle_part",
+    "name": { "str": "cargo space" },
+  },
+ {
+    "copy-from": "cargo_space_abstract",
+    "id": "cargo_space_two_wall_right",
+    "type": "vehicle_part",
+    "name": { "str": "cargo space" },
+  },
+{
     "copy-from": "trunk_abstract",
     "id": "cargo_space",
     "type": "vehicle_part",
@@ -429,6 +550,7 @@
       { "item": "scrap", "count": [ 6, 8 ] }
     ]
   },
+
   {
     "copy-from": "cargo_space",
     "id": "cargo_space_external",
